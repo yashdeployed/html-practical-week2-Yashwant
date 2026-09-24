@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+  <form action="#" method="post">
+    <p><label for="name">Name:</label><br>
+       <input type="text" id="name" name="name" required></p>
+
+    <p><label for="email">Email:</label><br>
+       <input type="email" id="email" name="email" required></p>
+
+    <p><label for="password">Password:</label><br>
+       <input type="password" id="password" name="password" minlength="8" required></p>
+
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="gender" value="male"><label for="male"> Male</label>
+      <input type="radio" id="female" name="gender" value="female"><label for="female"> Female</label>
+      <input type="radio" id="other" name="gender" value="other"><label for="other"> Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Interests</legend>
+      <input type="checkbox" id="web" name="interests" value="web"><label for="web"> Web Development</label>
+      <input type="checkbox" id="security" name="interests" value="security"><label for="security"> Cybersecurity</label>
+      <input type="checkbox" id="ai" name="interests" value="ai"><label for="ai"> AI</label>
+      <input type="checkbox" id="games" name="interests" value="games"><label for="games"> Gaming</label>
+    </fieldset>
+
+    <p><label for="dept">Department:</label><br>
+       <select id="dept" name="department">
+         <option value="">-- Select --</option>
+         <option>Software Engineering</option>
+         <option>Computer Science</option>
+         <option>Information Technology</option>
+       </select></p>
+
+    <p><label for="about">About You:</label><br>
+       <textarea id="about" name="about" rows="5" cols="40"></textarea></p>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
